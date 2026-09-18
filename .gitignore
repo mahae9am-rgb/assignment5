@@ -7,3 +7,5 @@ tasks/inventory-managment-api/
 tasks/
 validation-project/
 tempCodeRunnerFile.js
+/migrations
+/models
