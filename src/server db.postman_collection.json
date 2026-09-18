@@ -1,0 +1,518 @@
+{
+  "info": {
+    "_postman_id": "a468a7ac-922d-4df1-82f3-e4143a415af1",
+    "name": "server db",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57079027",
+    "_collection_link": "https://go.postman.co/collection/57079027-a468a7ac-922d-4df1-82f3-e4143a415af1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "add user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"mohamed ali\",\r\n  \"email\": \"mohamedali@gmail.com\",\r\n  \"password\": \"987645678\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/users/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "users",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Maha\",\r\n  \"email\": \"ali@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/users/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "users",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update user",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Updated Name\",\r\n  \"email\":\"Updated Last Name\",\r\n  \"age\":30,\r\n  \"role\":\"user\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/users/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get user by email",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6700/users/by-email?email=ali@gmail.com",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "users",
+            "by-email"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "ali@gmail.com"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get user by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6700/users/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "users",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"post\",\r\n  \"content\": \"testing \",\r\n  \"userid\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/posts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete post",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"blog1\",\r\n  \"content\": \"hello 123\",\r\n  \"userid\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/posts/6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "posts",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete post",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"blog1\",\r\n  \"content\": \"hello 123\",\r\n  \"userid\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/posts/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "posts",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete post",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"blog1\",\r\n  \"content\": \"hello 123\",\r\n  \"userid\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/posts/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "posts",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get post details",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6700/posts/details",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "posts",
+            "details"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get posts with number comment",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6700/posts/commenctcount",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "posts",
+            "commenctcount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create comments",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"comments\": [\r\n    {\r\n      \"content\": \"This is the first comment.\",\r\n      \"postid\": 2,\r\n      \"userid\": 1\r\n    },\r\n    {\r\n      \"content\": \"Amazing post!\",\r\n      \"postid\": 2,\r\n      \"userid\": 2\r\n    },\r\n    {\r\n      \"content\": \"I totally agree with this post.\",\r\n      \"postid\": 3,\r\n      \"userid\": 3\r\n    },\r\n    {\r\n      \"content\": \"Thanks for sharing your thoughts.\",\r\n      \"postid\": 4,\r\n      \"userid\": 1\r\n    },\r\n    {\r\n      \"content\": \"Looking forward to more posts like this!\",\r\n      \"postid\": 2,\r\n      \"userid\": 2\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/comments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "comments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update fail",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"content\": \"I totally agree with this post - updated!\",\r\n  \"userid\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/comments/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "comments",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update fail",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"content\": \"I totally agree with this post - updated!\",\r\n  \"userid\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/comments/8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "comments",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update comment",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"content\": \"I totally agree with this post - updated!\",\r\n  \"userid\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/comments/8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "comments",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "find comment",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"userid\":2,\r\n    \"postid\":1,\r\n    \"content\": \"This is a sample comment\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:6700/comments/find-or-create",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "comments",
+            "find-or-create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get comments",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6700/comments/search?word=the12jol",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "comments",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "word",
+              "value": "the12jol"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get comments recent",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6700/comments/newest/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "comments",
+            "newest",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get comments",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"comments\": [\r\n    {\r\n      \"content\": \"This is the first comment.\",\r\n      \"postid\": 2,\r\n      \"userid\": 1\r\n    },\r\n    {\r\n      \"content\": \"Amazing post!\",\r\n      \"postid\": 2,\r\n      \"userid\": 2\r\n    },\r\n    {\r\n      \"content\": \"I totally agree with this post.\",\r\n      \"postid\": 3,\r\n      \"userid\": 3\r\n    },\r\n    {\r\n      \"content\": \"Thanks for sharing your thoughts.\",\r\n      \"postid\": 4,\r\n      \"userid\": 1\r\n    },\r\n    {\r\n      \"content\": \"Looking forward to more posts like this!\",\r\n      \"postid\": 2,\r\n      \"userid\": 2\r\n    }\r\n  ]\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:6700/comments/details/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6700",
+          "path": [
+            "comments",
+            "details",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
