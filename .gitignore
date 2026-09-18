@@ -4,3 +4,6 @@ node_modules
 
 /src/generated/prisma
 tasks/inventory-managment-api/
+tasks/
+validation-project/
+tempCodeRunnerFile.js
