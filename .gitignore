@@ -13,3 +13,4 @@ tempCodeRunnerFile.js
 /models
 src/app/migrations
 src/migrations
+/prisma
