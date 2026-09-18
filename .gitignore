@@ -12,3 +12,4 @@ tempCodeRunnerFile.js
 /migrations
 /models
 src/app/migrations
+src/migrations
