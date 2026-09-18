@@ -9,3 +9,6 @@ validation-project/
 tempCodeRunnerFile.js
 /migrations
 /models
+/migrations
+/models
+src/app/migrations
